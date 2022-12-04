@@ -13,12 +13,23 @@
 
 
 <body>
+    <img id="gameOver" class="gameOver d-none" src="icon/game-over.png">
+    <button class="restartBtn d-none" id="restartBtn" onclick="restart()">Restart</button>
     <div class="playerPanel">
         <div id="player-1" class="playerInactive">
             <img class="" src="icon/cross.png">Player 1</div>
         <div id="player-2" class="">
             <img class="" src="icon/circle.png">Player 2 </div>
     </div>
+    <div id="winnerLine1" style="top: 550px" class="horizontalLine"></div>
+    <div id="winnerLine2" style="top: 690px" class="horizontalLine"></div>
+    <div id="winnerLine3" style="top: 830px" class="horizontalLine"></div>
+    <div id="winnerLine4" style="top: 690px; left: 475px;" class="makeVertikal horizontalLine"></div>
+    <div id="winnerLine5" style="top: 690px; left: 605px;" class="makeVertikal horizontalLine"></div>
+    <div id="winnerLine6" style="top: 690px; left: 740px;" class="makeVertikal horizontalLine"></div>
+    <div id="winnerLine7" style="top: 690px; transform: rotate(45deg); transform: scaleX(0.0);" class="horizontalLine"></div>
+    <div id="winnerLine8" style="top: 690px; transform: rotate(-45deg);transform: scaleX(0.0);" class="horizontalLine"></div>
+    
     <table>
         <tr>
             <td onclick="fillShape(0)">0
