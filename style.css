@@ -40,7 +40,12 @@ tr:last-child td {
 tr td:last-child {
   border-right: 0;
 }
-
+.relative{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .horizontalLine {
   height: 10px;
   width: 350px;
