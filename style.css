@@ -133,6 +133,7 @@ tr td:last-child {
   width: 100%;
   z-index: 3;
   animation: zoomIn 555ms ease-in-out;
+ 
 }
 @keyframes zoomIn {
   from {
@@ -155,6 +156,7 @@ tr td:last-child {
   font-size: 40px;
   cursor: pointer;
   border-radius: 4px;
+  animation: zoomIn 555ms ease-in-out;
 }
 
 .restartBtn:hover {
@@ -213,6 +215,24 @@ tr td:last-child {
   }
 }
 @media (max-width: 980px) {
+  .line02 {
+    top: 177px;
+  }
+  .line68 {
+    top: 430px;
+  }
+  .line06 {
+    right: 140px;
+  }
+  .line28 {
+    left: 140px;
+  }
+  .line08{
+    top: 302px
+  }
+  .line26{
+    top: 302px
+  }
   td {
     position: relative;
     width: 120px;
@@ -258,5 +278,42 @@ tr td:last-child {
     width: 60px;
     height: 60px;
     margin-right: 16px;
+  }
+}
+.noWinner {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  font-size: 40px;
+  z-index: 3;
+  background: white;
+}
+.slide-in-top {
+	
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-top {
+  0% {
+    
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    
+            transform: translateY(0);
+    opacity: 1;
   }
 }
