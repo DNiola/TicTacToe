@@ -10,6 +10,7 @@
     <script src="script.js"></script>
 </head>
 
+
 <body>
     <div class="plattformCountainer">
         <video autoplay muted loop class="video" id="myVideo">
@@ -22,12 +23,15 @@
         <div id="noWinner" class="noWinner slide-in-top d-none">
             <b class="noWinner">No Winner!</b>
         </div>
+        <button class="restartScoreBtn" id="" onclick="restartScore()">
+        Reset score!
+        </button>
         <div class="relative">
             <div>
                 <div class="gameFieldStyle">
                     <div class="playerPanel">
                         <div id="player-2" class="windowVersion">
-                            <img src="icon/circle.png" />Circle
+                            <img src="icon/circle.png" /><span id="circleScore">Circle</span>
                         </div>
                     </div>
                     <table>
@@ -89,7 +93,7 @@
                     </table>
                     <div class="playerPanel2">
                         <div id="player-1" class="playerInactive">
-                            <img class="" src="icon/cross.png" />Cross
+                            <img class="" src="icon/cross.png" /><span id="crossScore">Cross</span>
                         </div>
                     </div>
                 </div>

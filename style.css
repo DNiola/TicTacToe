@@ -159,7 +159,21 @@ tr td:last-child {
     transform: scale(1);
   }
 }
-
+.restartScoreBtn{
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #ff383d;
+  z-index: 1;
+  width: max-content;
+  height: max-content;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .restartBtn {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: #ff383d;
@@ -368,6 +382,18 @@ tr td:last-child {
   }
 }
 @media (max-width: 600px) {
+  .restartScoreBtn{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #ff383d;
+    z-index: 1;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
   .noWinner {
     position: absolute;
     width: max-content;
