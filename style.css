@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   height: 100vh;
   background-color: black;
+  font-family: monospace;
 }
 .plattformCountainer {
   margin: 0;
@@ -138,7 +139,7 @@ tr td:last-child {
   left: 36px;
 }
 .d-none {
-  display: none;
+  display: none !important;
 }
 .gameOver {
   position: absolute;
@@ -161,7 +162,7 @@ tr td:last-child {
 
 .restartBtn {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: #1c0b7f;
+  background-color: #ff383d;
   z-index: 3;
   width: 300px;
   height: 100px;
@@ -291,17 +292,16 @@ tr td:last-child {
   }
   .restartBtn {
     border: 1px solid rgba(0, 0, 0, 5);
-    background-color: #1c0b7f;
-    z-index: 2;
+    z-index: 3;
     width: 300px;
     height: 100px;
     color: white;
     font-size: 40px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 100%;
     position: absolute;
-    bottom: 60px;
-  }
+    bottom: 300px;
+}
 }
 @media (max-width: 980px) {
   .line02 {
@@ -449,6 +449,19 @@ tr td:last-child {
     top: 375px;
     width: 225px;
   }
+  .restartBtn {
+    border: 1px solid rgba(0, 0, 0, 5);
+    z-index: 3;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 28px;
+    position: absolute;
+    bottom: 266px;
+    padding: 10px;
+}
 }
 
 @media (max-width: 440px) {
@@ -503,8 +516,32 @@ tr td:last-child {
     border: 5px solid black;
     cursor: pointer;
   }
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 30px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+  }
 }
+
 @media (max-width: 340px) {
+  .restartBtn {
+    border: 1px solid rgba(0, 0, 0, 5);
+    z-index: 3;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 28px;
+    position: absolute;
+    bottom: 200px;
+    padding: 10px;
+}
   .line26 {
     top: 204px;
   }
