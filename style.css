@@ -197,12 +197,16 @@ tr td:last-child {
 
 .noWinner {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  font-size: 40px;
+  width: max-content;
+  font-size: 200px;
   z-index: 3;
-  background: white;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 100px;
+  
 }
+
 .slide-in-top {
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -274,6 +278,17 @@ tr td:last-child {
 }
 
 @media (max-width: 1780px) {
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 100px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 100px;
+    
+  }
   .restartBtn {
     border: 1px solid rgba(0, 0, 0, 5);
     background-color: #1c0b7f;
@@ -353,6 +368,16 @@ tr td:last-child {
   }
 }
 @media (max-width: 600px) {
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 40px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+  }
   td {
     position: relative;
     width: 90px;
