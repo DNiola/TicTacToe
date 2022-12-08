@@ -2,99 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-
 </head>
 
-
 <body>
-    <video autoplay muted loop class="video" id="myVideo">
-        <source src="bg.mp4" type="video/mp4">
-    </video>
-    <img id="gameOver" class="gameOver d-none" src="icon/game-over.png">
-    <button class="restartBtn d-none" id="restartBtn" onclick="restart()">
-        Restart</button>
-  
-    <div id="noWinner" class="noWinner slide-in-top d-none"><b class="noWinner">No Winner!(BETA)</b></div>
-    
-    
-    <div class="gameFieldStyle">
+    <div class="plattformCountainer">
+        <video autoplay muted loop class="video" id="myVideo">
+            <source src="bg.mp4" type="video/mp4" />
+        </video>
+        <img id="gameOver" class="gameOver d-none" src="icon/game-over.png" />
+        <button class="restartBtn d-none" id="restartBtn" onclick="restart()">
+            Restart
+        </button>
+        <div id="noWinner" class="noWinner slide-in-top d-none">
+            <b class="noWinner">No Winner!(BETA)</b>
+        </div>
         <div class="relative">
-            <div class="playerPanel">
-                <div id="player-2" class="windowVersion">
-                    <img class="" src="icon/circle.png">Player 2
+            <div>
+                <div class="gameFieldStyle">
+                    <div class="playerPanel">
+                        <div id="player-2" class="windowVersion">
+                            <img src="icon/circle.png" />Circle
+                        </div>
+                    </div>
+                    <table>
+                        <div id="winnerLine1" class="line02 horizontalLine"></div>
+                        <div id="winnerLine2" class="line35 horizontalLine"></div>
+                        <div id="winnerLine3" class="line68 horizontalLine"></div>
+                        <div id="winnerLine4" class="line06 makeVertikal horizontalLine"></div>
+                        <div id="winnerLine5" class="line17 makeVertikal horizontalLine"></div>
+                        <div id="winnerLine6" class="line28 makeVertikal horizontalLine"></div>
+                        <div id="winnerLine7" style="transform: rotate(45deg); transform: scaleX(0)"
+                            class="line08 horizontalLine"></div>
+                        <div id="winnerLine8" style="transform: rotate(-45deg); transform: scaleX(0)"
+                            class="line26 horizontalLine"></div>
+
+                        <tr>
+                            <td onclick="fillShape(0)">
+                                <img id="cross-0" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-0" class="shape d-none" src="icon/circle.png" />
+                            </td>
+
+                            <td onclick="fillShape(1)">
+                                <img id="cross-1" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-1" class="shape d-none" src="icon/circle.png" />
+                            </td>
+
+                            <td onclick="fillShape(2)">
+                                <img id="cross-2" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-2" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="fillShape(3)">
+                                <img id="cross-3" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-3" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                            <td onclick="fillShape(4)">
+                                <img id="cross-4" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-4" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                            <td onclick="fillShape(5)">
+                                <img id="cross-5" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-5" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="fillShape(6)">
+                                <img id="cross-6" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-6" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                            <td onclick="fillShape(7)">
+                                <img id="cross-7" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-7" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                            <td onclick="fillShape(8)">
+                                <img id="cross-8" class="shape d-none" src="icon/cross.png" />
+                                <img id="circle-8" class="shape d-none" src="icon/circle.png" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="playerPanel2">
+                        <div id="player-1" class="playerInactive">
+                            <img class="" src="icon/cross.png" />Cross
+                        </div>
+                    </div>
                 </div>
             </div>
-            <table>
-            <div id="winnerLine1" class="line02 horizontalLine"></div>
-            <div id="winnerLine2" class="line35 horizontalLine"></div>
-            <div id="winnerLine3" class="line68 horizontalLine"></div>
-            <div id="winnerLine4" class="line06 makeVertikal horizontalLine"></div>
-            <div id="winnerLine5" class="line17 makeVertikal horizontalLine"></div>
-            <div id="winnerLine6" class="line28 makeVertikal horizontalLine"></div>
-            <div id="winnerLine7" style="transform: rotate(45deg); transform: scaleX(0.0);" class="line08 horizontalLine"></div>
-            <div id="winnerLine8" style="transform: rotate(-45deg);transform: scaleX(0.0);" class="line26 horizontalLine"></div>
-            <tr>
-                <td onclick="fillShape(0)">
-                    <img id="cross-0" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-0" class="shape d-none" src="icon/circle.png">
-                </td>
-                
-                <td onclick="fillShape(1)">
-                    <img id="cross-1" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-1" class="shape d-none" src="icon/circle.png">
-                </td>
-                
-                <td onclick="fillShape(2)">
-                    <img id="cross-2" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-2" class="shape d-none" src="icon/circle.png">
-                </td>
-            </tr>
-            <tr>
-                <td onclick="fillShape(3)">
-                    <img id="cross-3" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-3" class="shape d-none" src="icon/circle.png">
-                </td>
-                <td onclick="fillShape(4)">
-                    <img id="cross-4" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-4" class="shape d-none" src="icon/circle.png">
-                </td>
-                <td onclick="fillShape(5)">
-                    <img id="cross-5" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-5" class="shape d-none" src="icon/circle.png">
-                </td>
-            </tr>
-            <tr>
-                <td onclick="fillShape(6)">
-                    <img id="cross-6" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-6" class="shape d-none" src="icon/circle.png">
-                </td>
-                <td onclick="fillShape(7)">
-                    <img id="cross-7" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-7" class="shape d-none" src="icon/circle.png">
-                </td>
-                <td onclick="fillShape(8)">
-                    <img id="cross-8" class="shape d-none" src="icon/cross.png">
-                    <img id="circle-8" class="shape d-none" src="icon/circle.png">
-                </td>
-            </tr>
-        </table>
-        <div class="playerPanel2">
-            <div id="player-1" class="playerInactive">
-                <img class="" src="icon/cross.png">Player 1
-            </div></div>
+        </div>
     </div>
-    
-    <!--<div class="playerPanelRE">
-        <div id="player-2" class="player2RE">
-        <img class="" src="icon/circle.png">Player 2 
-    </div>
-</div>-->
 </body>
 
 </html>
