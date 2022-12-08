@@ -1,3 +1,4 @@
+
 let fields = [];
 let gameOver = false;
 let currentShape = "cross";
@@ -23,6 +24,7 @@ function fillShape(id) {
   }
 }
 
+
 function restart() {
   gameOver = false;
   fields = [];
@@ -30,7 +32,6 @@ function restart() {
   document.getElementById("noWinner").classList.add("d-none");
   document.getElementById("gameOver").classList.add("d-none");
   document.getElementById("restartBtn").classList.add("d-none");
-
   for (let i = 1; i < 9; i++) {
     document.getElementById("winnerLine" + i).classList.add("d-none");
   }
@@ -39,6 +40,7 @@ function restart() {
     document.getElementById("cross-" + i).classList.add("d-none");
   }
 }
+
 
 function draw() {
   for (let i = 0; i < fields.length; i++) {
@@ -51,6 +53,7 @@ function draw() {
   }
 }
 
+
 function checkForWin() {
   rounds++;
   let winner;
@@ -59,7 +62,6 @@ function checkForWin() {
     document.getElementById("winnerLine1").style.transform = "scaleX(1.2)";
     document.getElementById("winnerLine1").classList.remove("d-none");
   }
-
   if (fields[3] == fields[4] && fields[4] == fields[5] && fields[3]) {
     winner = fields[3];
     document.getElementById("winnerLine2").style.transform = "scaleX(1.2)";
@@ -70,37 +72,29 @@ function checkForWin() {
     document.getElementById("winnerLine3").style.transform = "scaleX(1.2)";
     document.getElementById("winnerLine3").classList.remove("d-none");
   }
-
   if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
     winner = fields[0];
-    document.getElementById("winnerLine4").style.transform =
-      "rotate(90deg) scaleX(1.2)";
+    document.getElementById("winnerLine4").style.transform = "rotate(90deg) scaleX(1.2)";
     document.getElementById("winnerLine4").classList.remove("d-none");
   }
   if (fields[1] == fields[4] && fields[4] == fields[7] && fields[1]) {
     winner = fields[1];
-    document.getElementById("winnerLine5").style.transform =
-      "rotate(90deg) scaleX(1.2)";
+    document.getElementById("winnerLine5").style.transform = "rotate(90deg) scaleX(1.2)";
     document.getElementById("winnerLine5").classList.remove("d-none");
   }
-
   if (fields[2] == fields[5] && fields[5] == fields[8] && fields[2]) {
     winner = fields[2];
-    document.getElementById("winnerLine6").style.transform =
-      "rotate(90deg) scaleX(1.3)";
+    document.getElementById("winnerLine6").style.transform = "rotate(90deg) scaleX(1.3)";
     document.getElementById("winnerLine6").classList.remove("d-none");
   }
   if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
     winner = fields[0];
-    document.getElementById("winnerLine7").style.transform =
-      "rotate(45deg) scaleX(1.6)";
+    document.getElementById("winnerLine7").style.transform = "rotate(45deg) scaleX(1.6)";
     document.getElementById("winnerLine7").classList.remove("d-none");
   }
-
   if (fields[2] == fields[4] && fields[4] == fields[6] && fields[2]) {
     winner = fields[2];
-    document.getElementById("winnerLine8").style.transform =
-      "rotate(-45deg) scaleX(1.6)";
+    document.getElementById("winnerLine8").style.transform = "rotate(-45deg) scaleX(1.6)";
     document.getElementById("winnerLine8").classList.remove("d-none");
   }
   if (rounds > 8 && winner === undefined) {
@@ -113,16 +107,15 @@ function checkForWin() {
     winnerAnimation();
     if (winner == "cross") {
       crossWins++;
-      document.getElementById("crossScore").innerHTML =
-        "<span>Cross: </span>" + crossWins;
+      document.getElementById("crossScore").innerHTML = "<span>Cross: </span>" + crossWins;
     } else {
       circleWins++;
-      document.getElementById("circleScore").innerHTML =
-        "<span>Circle: </span>" + circleWins;
+      document.getElementById("circleScore").innerHTML = "<span>Circle: </span>" + circleWins;
     }
     console.log("GEWINNER:", winner);
   }
 }
+
 
 function winnerAnimation() {
   setTimeout(function () {
@@ -132,6 +125,7 @@ function winnerAnimation() {
     document.getElementById("restartBtn").classList.remove("d-none");
   }, 1075);
 }
+
 
 function noWinnerAnimation() {
   setTimeout(function () {
@@ -143,14 +137,13 @@ function noWinnerAnimation() {
   }, 1075);
 }
 
+
 function restartScore() {
   crossWins = [];
   circleWins = [];
-   crossZero = crossWins
-   circleZero = circleWins
-  document.getElementById("circleScore").innerHTML =
-        "<span>Circle </span>" + circleZero;
-        document.getElementById("crossScore").innerHTML =
-        "<span>Cross </span>" + crossZero;
-  restart()
+  crossZero = crossWins;
+  circleZero = circleWins;
+  document.getElementById("circleScore").innerHTML = "<span>Circle </span>" + circleZero;
+  document.getElementById("crossScore").innerHTML = "<span>Cross </span>" + crossZero;
+  restart();
 }
