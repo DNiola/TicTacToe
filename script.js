@@ -5,6 +5,7 @@ let rounds = [];
 let circleWins = [];
 let crossWins = [];
 
+
 function fillShape(id) {
   if (!fields[id] && !gameOver) {
     if (currentShape == "cross") {
@@ -20,6 +21,7 @@ function fillShape(id) {
     checkForWin();
   }
 }
+
 
 function restart() {
   gameOver = false;
@@ -37,6 +39,7 @@ function restart() {
   }
 }
 
+
 function draw() {
   for (let i = 0; i < fields.length; i++) {
     if (fields[i] == "circle") {
@@ -47,6 +50,7 @@ function draw() {
     }
   }
 }
+
 
 function checkForWin() {
   rounds++;

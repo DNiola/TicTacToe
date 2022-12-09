@@ -73,7 +73,7 @@ tr td:last-child {
   margin-top: 32px;
   display: flex;
   font-size: 32px;
-  background: #00000021;
+  background: #0000009c;
   z-index: 1;
   border-radius: 10px;
   padding: 11px;
@@ -107,7 +107,7 @@ tr td:last-child {
   display: flex;
   font-size: 32px;
   margin-bottom: 32px;
-  background: #00000021;
+  background: #0000009c;
   z-index: 1;
   border-radius: 10px;
   padding: 11px;

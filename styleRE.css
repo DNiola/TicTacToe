@@ -1,445 +1,445 @@
 @media (max-width: 1780px) {
-    .noWinner {
-      position: absolute;
-      width: max-content;
-      font-size: 100px;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      color: white;
-      padding: 100px;
-    }
-    .restartBtn {
-      border: 1px solid rgba(0, 0, 0, 5);
-      z-index: 3;
-      width: 300px;
-      height: 100px;
-      color: white;
-      font-size: 40px;
-      cursor: pointer;
-      border-radius: 100%;
-      position: absolute;
-      bottom: 300px;
-    }
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 100px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 100px;
   }
   
-  @media (max-width: 980px) {
-    .line02 {
-      top: 213px;
-      width: 249px;
-    }
-  
-    .line68 {
-      top: 468px;
-      width: 274px;
-    }
-  
-    .line06 {
-      right: 294px;
-      width: 249px;
-    }
-  
-    .line28 {
-      left: 293px;
-      width: 254px;
-    }
-  
-    .line08 {
-      top: 342px;
-      width: 250px;
-    }
-  
-    .line26 {
-      top: 342px;
-      width: 250px;
-    }
-  
-    .line35 {
-      width: 190px;
-    }
-  
-    .line17 {
-      width: 195px;
-    }
-  
-    td {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      border: 5px solid black;
-      cursor: pointer;
-    }
-  
-    .playerPanel {
-      display: flex;
-      font-size: 32px;
-      margin-bottom: 32px;
-    }
-  
-    .shape {
-      position: absolute;
-      width: 70px;
-      height: 70px;
-      top: 24px;
-      left: 27px;
-    }
-  
-    .gameFieldStyle {
-      padding-top: 35px;
-      padding-bottom: 35px;
-      padding-left: 100px;
-      padding-right: 100px;
-      border: 4px solid black;
-      background: #30aad42b;
-      z-index: 1;
-      border-radius: 55px;
-      box-shadow: 0px 0px 50px 50px #000000;
-    }
+  .restartBtn {
+    border: 1px solid rgba(0, 0, 0, 5);
+    z-index: 3;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 300px;
   }
-  
-  @media (max-width: 600px) {
-    .restartScoreBtn {
-      padding: 10px;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      background-color: #ff383d;
-      z-index: 1;
-      width: max-content;
-      height: max-content;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-  
-    .noWinner {
-      position: absolute;
-      width: max-content;
-      font-size: 40px;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      color: white;
-      padding: 25px;
-    }
-  
-    td {
-      position: relative;
-      width: 90px;
-      height: 90px;
-      border: 5px solid black;
-      cursor: pointer;
-    }
-  
-    .shape {
-      position: absolute;
-      width: 55px;
-      height: 55px;
-      top: 19px;
-      left: 18px;
-    }
-  
-    .player2RE {
-      position: absolute !important;
-      display: flex;
-      font-size: 32px;
-      margin-bottom: 32px;
-    }
-  
-    .playerPanelRE img {
-      display: flex !important;
-      width: 60px;
-      height: 60px;
-      margin-right: 16px;
-    }
-  
-    .gameFieldStyle {
-      padding-top: 35px;
-      padding-bottom: 35px;
-      padding-left: 60px;
-      padding-right: 60px;
-      border: 4px solid black;
-      background: #30aad42b;
-      z-index: 1;
-      border-radius: 55px;
-      box-shadow: 0px 0px 50px 50px #000000;
-    }
-  
-    .playerPanel img {
-      width: 40px;
-      height: 40px;
-      margin-right: 16px;
-    }
-  
-    .playerPanel2 img {
-      width: 40px;
-      height: 40px;
-      margin-right: 16px;
-    }
-  
-    .line08 {
-      top: 277px;
-      width: 160px;
-    }
-  
-    .line26 {
-      top: 277px;
-      width: 160px;
-    }
-  
-    .line02 {
-      top: 181px;
-      width: 182px;
-    }
-  
-    .line06 {
-      right: 213px;
-      width: 182px;
-    }
-  
-    .line28 {
-      left: 207px;
-      width: 193px;
-    }
-  
-    .line68 {
-      top: 375px;
-      width: 225px;
-    }
-  
-    .restartBtn {
-      border: 1px solid rgba(0, 0, 0, 5);
-      z-index: 3;
-      width: max-content;
-      height: max-content;
-      color: white;
-      font-size: 32px;
-      cursor: pointer;
-      border-radius: 28px;
-      position: absolute;
-      bottom: 266px;
-      padding: 10px;
-    }
-    
-    .footer {
+}
+
+@media (max-width: 980px) {
+  .line02 {
+    top: 213px;
+    width: 249px;
+  }
+
+  .line68 {
+    top: 468px;
+    width: 274px;
+  }
+
+  .line06 {
+    right: 294px;
+    width: 249px;
+  }
+
+  .line28 {
+    left: 293px;
+    width: 254px;
+  }
+
+  .line08 {
+    top: 342px;
+    width: 250px;
+  }
+
+  .line26 {
+    top: 342px;
+    width: 250px;
+  }
+
+  .line35 {
+    width: 190px;
+  }
+
+  .line17 {
+    width: 195px;
+  }
+
+  td {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 5px solid black;
+    cursor: pointer;
+  }
+
+  .playerPanel {
+    display: flex;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .shape {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 24px;
+    left: 27px;
+  }
+
+  .gameFieldStyle {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 4px solid black;
+    background: #30aad42b;
+    z-index: 1;
+    border-radius: 55px;
+    box-shadow: 0px 0px 50px 50px #000000;
+  }
+}
+
+@media (max-width: 600px) {
+  .restartScoreBtn {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #ff383d;
+    z-index: 1;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 40px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+  }
+
+  td {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 5px solid black;
+    cursor: pointer;
+  }
+
+  .shape {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 19px;
+    left: 18px;
+  }
+
+  .player2RE {
+    position: absolute !important;
+    display: flex;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .playerPanelRE img {
+    display: flex !important;
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+  }
+
+  .gameFieldStyle {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 4px solid black;
+    background: #30aad42b;
+    z-index: 1;
+    border-radius: 55px;
+    box-shadow: 0px 0px 50px 50px #000000;
+  }
+
+  .playerPanel img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  .playerPanel2 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  .line08 {
+    top: 277px;
+    width: 160px;
+  }
+
+  .line26 {
+    top: 277px;
+    width: 160px;
+  }
+
+  .line02 {
+    top: 181px;
+    width: 182px;
+  }
+
+  .line06 {
+    right: 213px;
+    width: 182px;
+  }
+
+  .line28 {
+    left: 207px;
+    width: 193px;
+  }
+
+  .line68 {
+    top: 375px;
+    width: 225px;
+  }
+
+  .restartBtn {
+    border: 1px solid rgba(0, 0, 0, 5);
+    z-index: 3;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 28px;
+    position: absolute;
+    bottom: 266px;
+    padding: 10px;
+  }
+
+  .footer {
     display: flex;
     z-index: 5;
     bottom: 0;
     color: white;
     flex-direction: column;
     font-size: 8px;
-    }
   }
-  
-  @media (max-width: 440px) {
-    .line26 {
-      top: 252px;
-      height: 8px;
-    }
-  
-    .line08 {
-      top: 252px;
-      height: 8px;
-    }
-  
-    .line02 {
-      top: 154px;
-      width: 182px;
-      height: 8px;
-    }
-  
-    .line06 {
-      right: 159px;
-      width: 182px;
-      height: 8px;
-    }
-  
-    .line28 {
-      left: 166px;
-      width: 166px;
-      height: 8px;
-    }
-  
-    .line68 {
-      top: 329px;
-      width: 180px;
-      height: 8px;
-    }
-  
-    .shape {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      top: 22px;
-      left: 21px;
-    }
-  
-    .gameFieldStyle {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      padding-left: 30px;
-      padding-right: 30px;
-      border: 4px solid black;
-      background: #30aad42b;
-      z-index: 1;
-      border-radius: 38px;
-      box-shadow: 0px 0px 50px 50px #000000;
-    }
-  
-    td {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      border: 5px solid black;
-      cursor: pointer;
-    }
-  
-    .noWinner {
-      position: absolute;
-      width: max-content;
-      font-size: 30px;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      color: white;
-      padding: 25px;
-    }
-    .playerPanel {
-      display: flex;
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-    
-    .playerPanel2 {
-      display: flex;
-      font-size: 22px;
-      margin-top: 20px;
-    }
+}
+
+@media (max-width: 440px) {
+  .line26 {
+    top: 252px;
+    height: 8px;
   }
-  
-  @media (max-width: 340px) {
-    .restartBtn {
-      border: 1px solid rgba(0, 0, 0, 5);
-      z-index: 3;
-      width: max-content;
-      height: max-content;
-      color: white;
-      font-size: 32px;
-      cursor: pointer;
-      border-radius: 28px;
-      position: absolute;
-      bottom: 200px;
-      padding: 10px;
-    }
-  
-    .line26 {
-      top: 204px;
-    }
-  
-    .line08 {
-      top: 204px;
-    }
-  
-    .line02 {
-      top: 128px;
-      width: 155px;
-    }
-  
-    .line06 {
-      right: 137px;
-      width: 155px;
-    }
-  
-    .line28 {
-      left: 131px;
-      width: 166px;
-      height: 8px;
-    }
-  
-    .line68 {
-      top: 282px;
-      width: 180px;
-      height: 8px;
-    }
-  
-    .line35 {
-      width: 180px;
-      height: 8px;
-    }
-  
-    .line17 {
-      width: 180px;
-      height: 8px;
-    }
-    .shape {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      top: 17px;
-      left: 16px;
-    }
-  
-    td {
-      position: relative;
-      width: 70px;
-      height: 70px;
-      border: 5px solid black;
-      cursor: pointer;
-    }
-  
-    .playerPanel img {
-      width: 30px;
-      height: 30px;
-      margin-right: 16px;
-    }
-  
-    .playerPanel2 img {
-      width: 30px;
-      height: 30px;
-      margin-right: 16px;
-    }
-  
-    .gameFieldStyle {
-      padding-top: 14px;
-      padding-bottom: 14px;
-      padding-left: 20px;
-      padding-right: 20px;
-      border: 4px solid black;
-      background: #30aad42b;
-      z-index: 1;
-      border-radius: 38px;
-      box-shadow: 0px 0px 50px 50px #000000;
-    }
-  
-    .playerPanel div {
-      color: white;
-      display: flex;
-      align-items: center;
-      margin-right: 10px;
-      margin-left: 10px;
-      font-size: 20px;
-    }
-    
-    .playerPanel2 div {
-      color: white;
-      display: flex;
-      align-items: center;
-      margin-right: 10px;
-      margin-left: 10px;
-      font-size: 20px;
-    }
+
+  .line08 {
+    top: 252px;
+    height: 8px;
   }
-  
-  @media (max-width: 310px) {
-    .shape {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      top: 15px;
-      left: 15px;
-    }
-    
-    .line02 {
-      top: 126px;
-    }
+
+  .line02 {
+    top: 154px;
+    width: 182px;
+    height: 8px;
   }
-  
+
+  .line06 {
+    right: 159px;
+    width: 182px;
+    height: 8px;
+  }
+
+  .line28 {
+    left: 166px;
+    width: 166px;
+    height: 8px;
+  }
+
+  .line68 {
+    top: 329px;
+    width: 180px;
+    height: 8px;
+  }
+
+  .shape {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 22px;
+    left: 21px;
+  }
+
+  .gameFieldStyle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 4px solid black;
+    background: #30aad42b;
+    z-index: 1;
+    border-radius: 38px;
+    box-shadow: 0px 0px 50px 50px #000000;
+  }
+
+  td {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 5px solid black;
+    cursor: pointer;
+  }
+
+  .noWinner {
+    position: absolute;
+    width: max-content;
+    font-size: 30px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+  }
+  .playerPanel {
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .playerPanel2 {
+    display: flex;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .restartBtn {
+    border: 1px solid rgba(0, 0, 0, 5);
+    z-index: 3;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 28px;
+    position: absolute;
+    bottom: 200px;
+    padding: 10px;
+  }
+
+  .line26 {
+    top: 204px;
+  }
+
+  .line08 {
+    top: 204px;
+  }
+
+  .line02 {
+    top: 128px;
+    width: 155px;
+  }
+
+  .line06 {
+    right: 137px;
+    width: 155px;
+  }
+
+  .line28 {
+    left: 131px;
+    width: 166px;
+    height: 8px;
+  }
+
+  .line68 {
+    top: 282px;
+    width: 180px;
+    height: 8px;
+  }
+
+  .line35 {
+    width: 180px;
+    height: 8px;
+  }
+
+  .line17 {
+    width: 180px;
+    height: 8px;
+  }
+  .shape {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 17px;
+    left: 16px;
+  }
+
+  td {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 5px solid black;
+    cursor: pointer;
+  }
+
+  .playerPanel img {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+  }
+
+  .playerPanel2 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+  }
+
+  .gameFieldStyle {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid black;
+    background: #30aad42b;
+    z-index: 1;
+    border-radius: 38px;
+    box-shadow: 0px 0px 50px 50px #000000;
+  }
+
+  .playerPanel div {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .playerPanel2 div {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 310px) {
+  .shape {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .line02 {
+    top: 126px;
+  }
+}
