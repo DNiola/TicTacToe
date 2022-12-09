@@ -196,7 +196,7 @@ tr td:last-child {
 .restartBtn {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: #ff383d;
-  z-index: 3;
+  z-index: 4;
   width: 300px;
   height: 100px;
   color: white;
@@ -319,7 +319,7 @@ tr td:last-child {
 .footer {
   display: flex;
   z-index: 5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   color: white;
   font-size: 8px;

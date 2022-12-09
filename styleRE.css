@@ -223,7 +223,6 @@
     .footer {
     display: flex;
     z-index: 5;
-    position: absolute;
     bottom: 0;
     color: white;
     flex-direction: column;
@@ -243,13 +242,15 @@
     }
   
     .line02 {
-      top: 166px;
+      top: 154px;
       width: 182px;
+      height: 8px;
     }
   
     .line06 {
-      right: 158px;
+      right: 159px;
       width: 182px;
+      height: 8px;
     }
   
     .line28 {
@@ -259,7 +260,7 @@
     }
   
     .line68 {
-      top: 340px;
+      top: 329px;
       width: 180px;
       height: 8px;
     }
@@ -301,6 +302,17 @@
       justify-content: center;
       color: white;
       padding: 25px;
+    }
+    .playerPanel {
+      display: flex;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    
+    .playerPanel2 {
+      display: flex;
+      font-size: 22px;
+      margin-top: 20px;
     }
   }
   
@@ -414,18 +426,6 @@
       margin-right: 10px;
       margin-left: 10px;
       font-size: 20px;
-    }
-    
-    .playerPanel {
-      display: flex;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    
-    .playerPanel2 {
-      display: flex;
-      font-size: 32px;
-      margin-top: 20px;
     }
   }
   

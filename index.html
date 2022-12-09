@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleRE.css" />
     <script src="script.js"></script>
+    <script src="functions.js"></script>
 </head>
 
 <body>
     <div class="plattformCountainer">
         <video autoplay muted loop class="video" id="myVideo">
-            <source src="bg.mp4" type="video/mp4"/>
+            <source src="bg.mp4" type="video/mp4" />
         </video>
         <img id="gameOver" class="gameOver d-none" src="icon/game-over.png" />
         <button class="restartBtn d-none" id="restartBtn" onclick="restart()">
@@ -23,7 +24,7 @@
         <div id="noWinner" class="noWinner slide-in-top d-none">
             <b class="noWinner">No Winner!</b>
         </div>
-        <button class="restartScoreBtn" id="" onclick="restartScore()">
+        <button class="restartScoreBtn" id="" onclick="resetScore()">
             Reset score!
         </button>
         <div class="relative">
@@ -98,15 +99,15 @@
             </div>
         </div>
     </div>
-   <div class="footer"> 
-        <span>See more projects from same creator on 
+    <div class="footer">
+        <span>See more projects from same creator on
             <a href="https://github.com/DNiola">
-                <b style="color: rgb(255, 0, 0);">Github </b>
-            </a>. 
+                <b style="color: rgb(255, 0, 0);">Github</b>
+            </a>.
         </span>
         <br>
-       <span> Icon creator pixel-perfect and freepik dowloading by 
-            <a href="https://www.flaticon.com/de/">        
+        <span> Icon creator pixel-perfect and freepik dowloading by
+            <a href="https://www.flaticon.com/de/">
                 <b style="color: rgb(26, 255, 0);">flaticon</b>
             </a>.
         </span>
