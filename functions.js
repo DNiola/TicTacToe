@@ -19,6 +19,51 @@ function noWinnerAnimation() {
 }
 
 
+function selectetField0to2() {
+  return fields[0] == fields[1] && fields[1] == fields[2] && fields[0];
+}
+
+
+function selectetField3to5() {
+  return fields[3] == fields[4] && fields[4] == fields[5] && fields[3];
+}
+
+
+function selectetField6to8() {
+  return fields[6] == fields[7] && fields[7] == fields[8] && fields[6];
+}
+
+
+function selectetField0to6() {
+  return fields[0] == fields[3] && fields[3] == fields[6] && fields[0];
+}
+
+
+function selectetField1to7() {
+  return fields[1] == fields[4] && fields[4] == fields[7] && fields[1];
+}
+
+
+function selectetField2to8() {
+  return fields[2] == fields[5] && fields[5] == fields[8] && fields[2];
+}
+
+
+function selectetField0to8() {
+  return fields[0] == fields[4] && fields[4] == fields[8] && fields[0];
+}
+
+
+function selectetField2to6() {
+  return fields[2] == fields[4] && fields[4] == fields[6] && fields[2];
+}
+
+
+function noWinner(rounds, winner){
+  return rounds > 8 && winner === undefined
+}
+
+
 function circleIsVisible() {
   document.getElementById("player-1").classList.remove("playerInactive");
   document.getElementById("player-2").classList.add("playerInactive");
@@ -68,29 +113,32 @@ function vertikalLine(line) {
 
 function slatingLine(line) {
   if (line === 7) {
-    document.getElementById("winnerLine7").style.transform = "rotate(45deg) scaleX(1.6)";
+    document.getElementById("winnerLine7").style.transform =
+      "rotate(45deg) scaleX(1.6)";
     document.getElementById("winnerLine7").classList.remove("d-none");
   }
   if (line === 8) {
-    document.getElementById("winnerLine8").style.transform = "rotate(-45deg) scaleX(1.6)";
+    document.getElementById("winnerLine8").style.transform =
+      "rotate(-45deg) scaleX(1.6)";
     document.getElementById("winnerLine8").classList.remove("d-none");
-    
   }
 }
 
 
-function renderScore(winner){
+function renderScore(winner) {
   if (winner == "cross") {
     crossWins++;
-    document.getElementById("crossScore").innerHTML = "<span>Cross: </span>" + crossWins;
+    document.getElementById("crossScore").innerHTML =
+      "<span>Cross: </span>" + crossWins;
   } else {
     circleWins++;
-    document.getElementById("circleScore").innerHTML = "<span>Circle: </span>" + circleWins;
+    document.getElementById("circleScore").innerHTML =
+      "<span>Circle: </span>" + circleWins;
   }
 }
 
 
-function resetScoreHTML(){
-  document.getElementById("circleScore").innerHTML = "<span>Circle</span>"
-  document.getElementById("crossScore").innerHTML = "<span>Cross</span>"
+function resetScoreHTML() {
+  document.getElementById("circleScore").innerHTML = "<span>Circle</span>";
+  document.getElementById("crossScore").innerHTML = "<span>Cross</span>";
 }

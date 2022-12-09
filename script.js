@@ -55,48 +55,47 @@ function draw() {
 function checkForWin() {
   rounds++;
   let winner;
-  let line;
-  if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
+  if (selectetField0to2()) {
     winner = fields[0];
     line = 1;
-    horizontalLine(line)
+    horizontalLine(line);
   }
-  if (fields[3] == fields[4] && fields[4] == fields[5] && fields[3]) {
+  if (selectetField3to5()) {
     winner = fields[3];
     line = 2;
-    horizontalLine(line)
+    horizontalLine(line);
   }
-  if (fields[6] == fields[7] && fields[7] == fields[8] && fields[6]) {
+  if (selectetField6to8()) {
     winner = fields[6];
     line = 3;
-    horizontalLine(line)
+    horizontalLine(line);
   }
-  if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
+  if (selectetField0to6()) {
     winner = fields[0];
     line = 4;
-    vertikalLine(line)
+    vertikalLine(line);
   }
-  if (fields[1] == fields[4] && fields[4] == fields[7] && fields[1]) {
+  if (selectetField1to7()) {
     winner = fields[1];
     line = 5;
-    vertikalLine(line)
+    vertikalLine(line);
   }
-  if (fields[2] == fields[5] && fields[5] == fields[8] && fields[2]) {
+  if (selectetField2to8()) {
     winner = fields[2];
     line = 6;
-    vertikalLine(line)
+    vertikalLine(line);
   }
-  if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
+  if (selectetField0to8()) {
     winner = fields[0];
     line = 7;
-    slatingLine(line)
+    slatingLine(line);
   }
-  if (fields[2] == fields[4] && fields[4] == fields[6] && fields[2]) {
+  if (selectetField2to6()) {
     winner = fields[2];
     line = 8;
-    slatingLine(line)
+    slatingLine(line);
   }
-  if (rounds > 8 && winner === undefined) {
+  if (noWinner(rounds, winner)) {
     gameOver = true;
     noWinnerAnimation();
   }
@@ -111,15 +110,13 @@ function checkForWin() {
 function resetScore() {
   crossWins = [];
   circleWins = [];
-  if (currentShape == "cross") { 
+  if (currentShape == "cross") {
     currentShape = "circle";
     circleIsVisible();
   } else {
     currentShape = "cross";
     crossIsVisible();
   }
-  resetScoreHTML()
+  resetScoreHTML();
   restart();
 }
-
-

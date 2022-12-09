@@ -12,7 +12,6 @@
   
   .restartBtn {
     border: 1px solid rgba(0, 0, 0, 5);
-    z-index: 3;
     width: 300px;
     height: 100px;
     color: white;
@@ -209,7 +208,6 @@
 
   .restartBtn {
     border: 1px solid rgba(0, 0, 0, 5);
-    z-index: 3;
     width: max-content;
     height: max-content;
     color: white;
@@ -233,12 +231,12 @@
 
 @media (max-width: 440px) {
   .line26 {
-    top: 252px;
+    top: 241px;
     height: 8px;
   }
 
   .line08 {
-    top: 252px;
+    top: 241px;
     height: 8px;
   }
 
@@ -320,7 +318,6 @@
 @media (max-width: 340px) {
   .restartBtn {
     border: 1px solid rgba(0, 0, 0, 5);
-    z-index: 3;
     width: max-content;
     height: max-content;
     color: white;
