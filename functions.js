@@ -19,6 +19,71 @@ function noWinnerAnimation() {
 }
 
 
+function horizontalWin(winner) {
+  if (selectetField0to2()) {
+    winner = fields[0];
+    line = 1;
+    horizontalLine(line);
+  }
+  if (selectetField3to5()) {
+    winner = fields[3];
+    line = 2;
+    horizontalLine(line);
+  }
+  if (selectetField6to8()) {
+    winner = fields[6];
+    line = 3;
+    horizontalLine(line);
+  }
+  if (winner) {
+    winnerTrue(winner);
+  }
+}
+
+
+function vertikalWin(winner) {
+  if (selectetField0to6()) {
+    winner = fields[0];
+    line = 4;
+    vertikalLine(line);
+  }
+  if (selectetField1to7()) {
+    winner = fields[1];
+    line = 5;
+    vertikalLine(line);
+  }
+  if (selectetField2to8()) {
+    winner = fields[2];
+    line = 6;
+    vertikalLine(line);
+  }
+  if (winner) {
+    winnerTrue(winner);
+  }
+}
+
+
+function slatingWin(winner) {
+  if (selectetField0to8()) {
+    winner = fields[0];
+    line = 7;
+    slatingLine(line);
+  }
+  if (selectetField2to6()) {
+    winner = fields[2];
+    line = 8;
+    slatingLine(line);
+  }
+  if (winner) {
+    winnerTrue(winner);
+  }
+  if (noWinner(rounds, winner)) {
+    gameOver = true;
+    noWinnerAnimation();
+  }
+}
+
+
 function selectetField0to2() {
   return fields[0] == fields[1] && fields[1] == fields[2] && fields[0];
 }
@@ -60,7 +125,7 @@ function selectetField2to6() {
 
 
 function noWinner(rounds, winner){
-  return rounds > 8 && winner === undefined
+  return winner === undefined && rounds > 8
 }
 
 
@@ -94,18 +159,15 @@ function horizontalLine(line) {
 
 function vertikalLine(line) {
   if (line === 4) {
-    document.getElementById("winnerLine4").style.transform =
-      "rotate(90deg) scaleX(1.2)";
+    document.getElementById("winnerLine4").style.transform = "rotate(90deg) scaleX(1.2)";
     document.getElementById("winnerLine4").classList.remove("d-none");
   }
   if (line === 5) {
-    document.getElementById("winnerLine5").style.transform =
-      "rotate(90deg) scaleX(1.2)";
+    document.getElementById("winnerLine5").style.transform = "rotate(90deg) scaleX(1.2)";
     document.getElementById("winnerLine5").classList.remove("d-none");
   }
   if (line === 6) {
-    document.getElementById("winnerLine6").style.transform =
-      "rotate(90deg) scaleX(1.3)";
+    document.getElementById("winnerLine6").style.transform = "rotate(90deg) scaleX(1.3)";
     document.getElementById("winnerLine6").classList.remove("d-none");
   }
 }
@@ -113,13 +175,11 @@ function vertikalLine(line) {
 
 function slatingLine(line) {
   if (line === 7) {
-    document.getElementById("winnerLine7").style.transform =
-      "rotate(45deg) scaleX(1.6)";
+    document.getElementById("winnerLine7").style.transform = "rotate(45deg) scaleX(1.6)";
     document.getElementById("winnerLine7").classList.remove("d-none");
   }
   if (line === 8) {
-    document.getElementById("winnerLine8").style.transform =
-      "rotate(-45deg) scaleX(1.6)";
+    document.getElementById("winnerLine8").style.transform = "rotate(-45deg) scaleX(1.6)";
     document.getElementById("winnerLine8").classList.remove("d-none");
   }
 }
@@ -128,12 +188,10 @@ function slatingLine(line) {
 function renderScore(winner) {
   if (winner == "cross") {
     crossWins++;
-    document.getElementById("crossScore").innerHTML =
-      "<span>Cross: </span>" + crossWins;
+    document.getElementById("crossScore").innerHTML = "<span>Cross: </span>" + crossWins;
   } else {
     circleWins++;
-    document.getElementById("circleScore").innerHTML =
-      "<span>Circle: </span>" + circleWins;
+    document.getElementById("circleScore").innerHTML = "<span>Circle: </span>" + circleWins;
   }
 }
 

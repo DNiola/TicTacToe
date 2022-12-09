@@ -55,55 +55,19 @@ function draw() {
 function checkForWin() {
   rounds++;
   let winner;
-  if (selectetField0to2()) {
-    winner = fields[0];
-    line = 1;
-    horizontalLine(line);
+  if (horizontalWin(winner)) {
   }
-  if (selectetField3to5()) {
-    winner = fields[3];
-    line = 2;
-    horizontalLine(line);
+  if (vertikalWin(winner)) {
   }
-  if (selectetField6to8()) {
-    winner = fields[6];
-    line = 3;
-    horizontalLine(line);
+  if (slatingWin(winner)) {
   }
-  if (selectetField0to6()) {
-    winner = fields[0];
-    line = 4;
-    vertikalLine(line);
-  }
-  if (selectetField1to7()) {
-    winner = fields[1];
-    line = 5;
-    vertikalLine(line);
-  }
-  if (selectetField2to8()) {
-    winner = fields[2];
-    line = 6;
-    vertikalLine(line);
-  }
-  if (selectetField0to8()) {
-    winner = fields[0];
-    line = 7;
-    slatingLine(line);
-  }
-  if (selectetField2to6()) {
-    winner = fields[2];
-    line = 8;
-    slatingLine(line);
-  }
-  if (noWinner(rounds, winner)) {
-    gameOver = true;
-    noWinnerAnimation();
-  }
-  if (winner) {
-    gameOver = true;
-    winnerAnimation();
-    renderScore(winner);
-  }
+}
+
+
+function winnerTrue(winner) {
+  gameOver = true;
+  winnerAnimation();
+  renderScore(winner);
 }
 
 
