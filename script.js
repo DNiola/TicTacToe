@@ -53,13 +53,15 @@ function draw() {
 
 
 function checkForWin() {
-  rounds++;
   let winner;
   if (horizontalWin(winner)) {
   }
   if (vertikalWin(winner)) {
   }
   if (slatingWin(winner)) {
+  }
+  else{
+    rounds++;
   }
 }
 

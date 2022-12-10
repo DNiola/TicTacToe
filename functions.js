@@ -125,7 +125,7 @@ function selectetField2to6() {
 
 
 function noWinner(rounds, winner){
-  return winner === undefined && rounds > 8
+  return winner === undefined && rounds > 7
 }
 
 
